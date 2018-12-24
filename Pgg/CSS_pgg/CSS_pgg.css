@@ -2,10 +2,14 @@ body{
     color: blue
     
 }
-.p{
-    width: 300px;
-    height: 300px;
-    margin: 100px auto 0;
-opacity: 0;
-transition: all .5s;
+.q{
+    transform: scale(4,4);
+    position: absolute; top: 500px; left:20%;
+    float: right;
+}
+.r{
+    font: 100px arial;
+    margin-left: 1300px;
+    transform: 
+
 }
