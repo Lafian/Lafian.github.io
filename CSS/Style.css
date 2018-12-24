@@ -1,8 +1,9 @@
 body{
-    cursor: url(https://emojis.slackmojis.com/emojis/images/1450458551/184/nyancat_big.gif?1450458551), auto;
+    
     font-size: 40px;
     color: yellow;
     background-image: url(https://i.gifer.com/3vXI.gif);
+    cursor: url(https://emojis.slackmojis.com/emojis/images/1450458551/184/nyancat_big.gif?1450458551), auto;
     
     
 }
