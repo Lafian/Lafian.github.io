@@ -1,6 +1,8 @@
 body{
+    cursor: url(nyancat_big.gif), auto;
     font-size: 40px;
-    color: black;
+    color: yellow;
     background-image: url(https://i.gifer.com/3vXI.gif);
     
     
+}
