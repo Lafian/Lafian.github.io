@@ -1,0 +1,197 @@
+*
+{
+    margin: 0 auto;
+    padding: 0 auto;
+    outline: none;
+}
+body
+{
+    width:100%;
+    background: url(vgrom.com_1474018081_sc-2.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    
+}
+.menu1
+{
+    width: 100%;
+    height: 51px;
+    background: #808080;
+}
+
+.menu
+{
+    position: fixed;
+    width: 100%;
+    height: 51px;
+    background: #808080;
+    z-index: 1000;
+    display: flex;
+}
+
+.head
+{
+    height: 500px;
+    background-image: url(head.jpg);
+}
+
+.headline
+{
+    font-size: 24px;
+    padding: 80px 0px 0px 40px;
+}
+.hose
+{
+    padding: 0px 0px 0px 110px
+}
+
+.chees
+{
+    font-size: 18px;
+    padding: 60px 0px 0px 40px;
+}
+
+.content
+{
+    height: 100px;
+    background: #DCDCDC;
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+}
+ul a
+{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    display: block;
+    background: #808080;
+    align-items: center;
+    padding: 15px 80px 15px 80px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover
+{
+    background: white;
+    color: #808080;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: 0.3s;
+}
+
+.history
+{
+    height: 220px;
+    background: #FFFAFA;
+}
+
+.historyc
+{
+    padding: 20px 40px 0px 40px;
+    font-size: 17px;
+}
+h2
+{
+    padding: 0px 0px 10px 0px;
+}
+
+.reg
+{
+    height: 2140px;
+    background: #C0C0C0;
+}
+
+.theo
+{
+    height: 620px;
+    background: #FFFAFA;
+}
+
+.options
+{
+    height: 320px;
+    background: #DCDCDC;
+}
+
+.desk
+{
+    font-size: 17px;
+    padding: 20px 40px 0px 40px;
+}
+
+.theo ul
+{
+    display: inherit;
+}
+
+.start
+{
+    width: 240px;
+    height: 240px;
+    margin: -230px 0px 0px 1200px;
+}
+
+.steps
+{
+    font-size: 17px;
+    padding: 20px 40px 0px 40px;
+}
+
+.steps ul
+{
+    font-size: 17px;
+    padding: 10px 40px 0px 40px; 
+    display: inherit;
+}
+
+.slider
+{
+    padding: 20px 0px 0px 0px;
+}
+
+.slide
+{
+    width: 230px;
+    height: 230px;
+}
+
+.slide1
+{
+    margin: 10px 0px 0px 0px;
+}
+
+.slide2
+{
+    margin: -230px 0px 0px 255px;
+}
+
+.slide3
+{
+    margin: -230px 0px 0px 510px;
+}
+
+.slide4
+{
+    margin: -230px 0px 0px 765px;
+}
+
+.slide5
+{
+    margin: -230px 0px 0px 1020px;
+}
+
+.slide6
+{
+    margin: -230px 0px 0px 1270px;
+}
+
+.tx
+{
+    margin: 140px 0px 0px 0px;
+}
