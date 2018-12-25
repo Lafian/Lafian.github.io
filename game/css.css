@@ -1,0 +1,10 @@
+*{
+    background: black;
+}
+.a{
+    width: 200px;
+    height: 200px;
+    border: 20px;
+    padding: 100px
+    color: white;
+}
