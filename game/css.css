@@ -1,10 +1,119 @@
-*{
-    background: black;
+
+@keyframes Miku{
+    0%{}
+    50%{position: absolute; top: -15%; left:75%;}
+    100%{}
 }
+
+i {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: rgb(44, 40, 40);
+    animation: move 5s infinite linear ;
+    
+    
+    
+  }
+  
+i:nth-child(2) {animation-delay:.1s;}
+i:nth-child(3) {animation-delay:.2s;}
+i:nth-child(4) {animation-delay:.3s;}
+i:nth-child(5) {animation-delay:.4s;}
+i:nth-child(6) {animation-delay:.5s;}
+i:nth-child(7) {animation-delay:.6s;}
+i:nth-child(8) {animation-delay:.7s;}
+i:nth-child(9) {animation-delay:.8s;}
+i:nth-child(10){animation-delay:.9s;}
+  
+  @keyframes move {
+    from {
+      left:0 ;
+      top:20px;
+    }
+    5%{margin-top: 40px}
+    10%{margin-top: 0px}
+    15%{margin-top: 40px}
+    20%{margin-top: 0px}
+    25%{
+        margin-top: 40px;
+    }
+    30%{margin-top: 0px}
+    35%{margin-top: 40px}
+    40%{margin-top: 0px}
+    45%{margin-top: 40px}
+    50%{ margin-top: 0px}
+    55%{margin-top: 40px}
+    60%{margin-top: 0px}
+    65%{margin-top: 40px}
+    70%{margin-top: 0px}
+          
+    75%{
+        margin-top: 40px;
+    }
+    80%{margin-top: 0px}
+    85%{margin-top: 40px}
+    90%{margin-top: 0px}
+    95%{margin-top: 40px}
+    to { 
+      left: 100%  ; 
+      top:20px;
+    } 
+
+    
+  }
+  .block1{
+      width: 103%;height: 10px; background: silver;
+     
+  }
+  .block2{
+    width: 103%;height: 10px; background: silver;
+   
+   
+}
+.block3{
+    width: 103%;height: 100px; background: rgb(59, 54, 54);
+    
+    
+}
+.block4{
+    width: 600px;height: 600px; background: rgb(37, 25, 25);
+    margin: 0 auto;padding: 0;
+    margin-top: 10%;
+    border: 20px solid rgb(180, 192, 207);
+}
+.sh{
+    margin-left: 43%;
+}
+
+    
+
+ 
+
+
+  
+      
+
+
+
+
+
+
+
+
+
 .a{
-    width: 200px;
-    height: 200px;
-    border: 20px;
-    padding: 100px
-    color: white;
+    transform: scale(0.2,0.2);
+    position: absolute; top: -15%; left:-15%;
+    float: left;
+    animation: Miku 5s infinite ease-in-out;
+
 }
+p{
+    color: red; font-size: 100px;
+}
+
+

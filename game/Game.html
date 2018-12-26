@@ -6,9 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome</title>
     <link rel="stylesheet" href="css.css">
+
+    <script language="JavaScript"> 
+  function check(){
+      if(document.getElementById("login").value=="agent007")
+      {alert("qq")}
+      else{alert("ti pidor")}
+
+
+</script>
+      <script language="JavaScript"> 
+      function startTimer() {
+        
+    var a1 = Math.floor(Math.random() * 10);
+    var a2 = Math.floor(Math.random() * 10);
+    var a3 = a1+a2
+    document.getElementById("pas").innerHTML = a1;
+    document.getElementById("login").innerHTML = a2;
+    document.getElementById("login4").innerHTML = a3;
+    
+    
+  }
+  
+  
+        </script>
+
+
+
+        <script language="JavaScript"> 
+      function go() {
+          if(document.getElementById("login2").value=="")
+    {}
+    else{
+    if(document.getElementById("login2")==){
+    alert("Верно")}
+        else{
+            alert("Попробуй ищё")
+        }}
+        
+    
+    
+    
+  }
+  
+  
+        </script>
+        
+        document.getElementById("login").value=a1;
+    var a1 = Math.random[1,20];
+    var a2 = Math.random[1,20];
+    var a3 = a1+a2
+    if(document.getElementById("login2").value=="")
+    {}
+    else{
+    if(document.getElementById("login2").value==a3){
+    alert("Верно")}
+        else{
+            alert("Попробуй ищё")
+        }}
+
+
+
+            var my_timer = document.getElementById("my_timer");
+    var time = my_timer.innerHTML;
+    var arr = time.split(":");
+    var h = arr[0];
+    var m = arr[1];
+    var s = arr[2];
+    if (s == 0) {
+      if (m == 0) {
+        if (h == 0) {
+          alert("Время вышло");
+          window.location.reload();
+          return;
+        }
+        h--;
+        m = 60;
+        if (h < 10) h = "0" + h;
+      }
+      m--;
+      if (m < 10) m = "0" + m;
+      s = 59;
+    }
+    else s--;
+    if (s < 10) s = "0" + s;
+    document.getElementById("my_timer").innerHTML = h+":"+m+":"+s;
+    setTimeout(startTimer, 1000);
+// if(document.getElementById("login2").value==a3){
+    alert("Верно")}
+        else{
+            alert("Попробуй ищё")}
+
+
+
+
+    
+
+
+
 </head>
 <body>
-    <div class="a">123</div>
+        
+   
+        <div class="linear"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     
+        <div class="a"><img src="https://avatanplus.com/files/resources/original/5848178c48cc8158d99bfc0a.png"></div>
+        <div class="block1"></div>
+        <div class="block3"></div>
+        <div class="block2"></div>
+        <div class="block4">
+                
+                
+                
+
+                <input id="login2" style="" type="text" list="alo" maxlength="10" value="" >
+                
+                <input id="but" style=""  type="button" name="but" value="Click me!!!" onclick="startTimer()" >
+                
+
+                
+                      
+        </div>
+        <datalist id="alo">
+                <option value="lolkek">
+                <option value="agent007">
+            </datalist>
+            
+            <p><span id="my_timer" style="color: #f00; font-size: 150%; font-weight: bold;">01:10:00</span></p>
+
+    
+        
+            <p id="pas"></p>
+                <p id="login"></p>
+                <p id="login4"></p>
+              
 </body>
 </html>
+
+
