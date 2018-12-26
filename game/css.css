@@ -115,5 +115,8 @@ i:nth-child(10){animation-delay:.9s;}
 p{
     color: red; font-size: 100px;
 }
+.u{
+    margin-top: 100%;
+}
 
 
