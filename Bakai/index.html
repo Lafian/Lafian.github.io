@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1500);
+           });
+       });
+       </script>
 
 
 </head>
@@ -65,7 +76,7 @@
         </div> 
         <div id="content" class="content">
                 
-                <h2 id="head1" align="center"; style="font-size:100px; " >Киберспорт</h2>
+                <h2  id="head1" align="center"; style="font-size:100px; " >Киберспорт</h2>
                 <div class="image"><img width="1180" height="750" src="img/Int.jpg">></div>  
                 <p class="text">Dota 2, наравне со своей предшественницей DotA, также является киберспортивной дисциплиной. До официального выхода игры из бета-теста было проведено большое количество турниров. В 2011 году, когда Valve впервые представили игру на обозрение публики, началась эра самого крупного и уважаемого киберспортивного турнира — The International. Затем, в 2015 году, Valve объявили о турнирах «мейджорах».
                    Сейчас «Dota 2» — одна из крупнейших киберспортивных дисциплин, в которую вовлечены множество команд, организаций и просто фанатов. История «Defense of the Ancients» — это путь от простой пользовательской карты до всемирно известной киберспортивной дисциплины.</p>
