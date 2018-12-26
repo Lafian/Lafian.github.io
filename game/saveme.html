@@ -27,11 +27,7 @@ function go(){
     document.getElementById("d").src = "1.mp3"
 }
       </script>
-      <script language="JavaScript">
-            function g(){
-                document.getElementById("ss").href = "saveme@"
-            }
-                  </script>
+    
       <script language="JavaScript">
         timeend= new Date();
         timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
@@ -53,8 +49,7 @@ function go(){
 
 
 </head>
-<body onload="time()" id="e" style="background-image: url(https://i.pinimg.com/originals/cb/60/72/cb6072312fe0004dacf1f3261c0e69ea.gif),url(33.png);
-background-position: 
+<body onload="time()" id="e" style="background-image: url(https://i.pinimg.com/originals/cb/60/72/cb6072312fe0004dacf1f3261c0e69ea.gif);
 background-size: 400px;">
 <img src="66.png" style="width: 37%;height: 62%; position: fixed; top: -5%;left: -3%;transform:rotate() ">
 <img src="66.png" style="width: 37%;height: 62%; position: fixed; top: -5%;left: 67%;transform: rotate(90deg) ">
@@ -89,7 +84,7 @@ background-size: 400px;">
         <div class="linear"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     
         <div class="a">
-        <img src="44.png" alt="">
+        <img id="" src="44.png" alt="">
         
         
         
@@ -105,14 +100,17 @@ background-size: 400px;">
                 <p>До нового года осталось:</p>
                     <span id="t" style="font-size:30px;color: red"></span>
                     <p>Cколько у тебя будет подарков?</p>
-                        <input id="but" style=""  type="button" name="but" value="Нажми на меня PLZ" onclick="startTimer()" >
+                        <input id="but" style="position: absolute;z-index: 10;"  type="button" name="but" value="Нажми на меня PLZ" onclick="startTimer()" >
                         <p class="t" id="pas"></p></li>
                             <input id="but5" style=""  type="button" name="but" value="Click me!!!" onclick="g()" >
                                 <p id="pas1"></p>            
                                     <a id="sav" style="font-size:100px;" id="wwe" href="saveme@.html"></a></li>
+                                    
+                                    <p>___________________________</p>
+                                    <p>Найди деда мороза на сайте!</p>
                 <ul>
                     <ul class="pt"><img  style="margin-left: 45%;
-                        margin-top: -33.4%;" src="22.png">
+                        margin-top: -58.1%;" src="22.png">
                         
                         </ul>
                         
@@ -136,8 +134,9 @@ background-size: 400px;">
             
         
             <p id="pas"></p>
-            <center><input class="u" id="but1" style=""  type="button" name="but1" value="НЕ НАЖИМАТЬ!!!" onclick="go()" ></center>
+            <center><input hidden class="u" id="but1" style=""  type="button" name="but1" value="НЕ НАЖИМАТЬ!!!" onclick="go()" ></center>
             <audio id="d" src="" autoplay></audio>
+            <img id="asd" src="77.png">
             
             
            
