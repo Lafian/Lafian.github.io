@@ -1,0 +1,226 @@
+
+
+
+body{
+width: 100%;
+height: 100%;
+color: rgb(19, 18, 18);
+background: rgb(255, 255, 255);
+font-size: 1em;
+font-family: "DejaVu Sans Mono", sans-serif;
+line-height: 135%;
+} 
+a{
+    color: rgb(0, 116, 211);
+    text-decoration: none;
+    transition: all.6s ease;
+     
+}
+a:hover{
+    color: rgb(0, 197, 211);
+    text-decoration: none;
+    transition: all.6s ease;
+     
+}
+a:active{color: brown;}
+img{
+    max-width: 100%;
+    height: 100px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+::selection{background: rgb(255, 255, 255); color: #fff}
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 0px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-size: 150px; 
+}
+.navbar-logo {display: inline-block;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 100px;
+  padding-left: 50px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #F73E24;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #F73E24;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+
+/*Attack on Titan*/
+
+.head1
+{
+    height: 400px;
+    background-image: url(56228.jpg);
+    background-size: 1300px;
+}
+
+.headline1
+{
+    font-size: 100px;
+    padding: 210px 0px 0px 293px;
+    color: #D3D3D3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.history1
+{
+    height: 800px;
+    background:  white;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.historyc1
+{
+    padding: 20px 40px 0px 40px;
+    font-size: 15px;
+}
+
+/* tokyo ghoul */
+
+.head2
+{
+    margin-top: 1300px;
+    height: 423px;
+    background-image: url(tokyo-ghoul-tokiyskiy-gul-4623.jpg);
+    background-size: 1400px;
+}
+
+.headline2
+{
+    font-size: 100px;
+    padding: 200px 0px 0px 445px;
+    padding-top:125px;
+    color:rgb(240, 0, 0) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.history2
+{
+    height: 800px;
+    background: rgb(255, 255, 255);
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.historyc2
+{
+    padding: 20px 40px 0px 40px;
+    font-size: 15px;
+}
+
+/* tokyo ghoul:re */
+
+.head3
+{
+    margin-top: -350px;
+    height: 543px;
+    background-image: url(933446.jpg);
+    background-size: 1330px;
+}
+
+.headline3
+{
+    font-size: 100px;
+    padding: 200px 0px 0px 333px;
+    padding-top:325px;
+    color:rgb(240, 0, 0) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.history3
+{
+    height: 800px;
+    background: rgb(255, 255, 255);
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.historyc3
+{
+    padding: 20px 40px 0px 40px;
+    font-size: 15px;
+}
+/* one-punch man */
+
+.head4
+{
+    margin-top: -350px;
+    height: 625px;
+    background-image: url(4b2a31875624c5649acbd83f05bcfe11.jpg);
+    background-size: 1330px;
+}
+
+.headline4
+{
+    font-size: 100px;
+    padding: 200px 0px 0px 333px;
+    padding-top:325px;
+    color:rgb(240, 0, 0) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.history4
+{
+    height: 800px;
+    background: rgb(255, 255, 255);
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.historyc4
+{
+    padding: 20px 40px 0px 40px;
+    font-size: 15px;
+}
