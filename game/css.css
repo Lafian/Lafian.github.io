@@ -175,11 +175,16 @@ transition: 3s;
 
 
   
-  body
+  body{
   
-   { 
-background-image: url(33.png);
-background-size: 100%; }
+   
+background-image: url(http://oboi.cc/uploads/11_05_2013/view/201209/oboik.ru_21360.jpg) ;
+background-size: cover auto;
+background-repeat: no-repeat;
+
+
+ }
+
   
   #particles-js {
     position: absolute;
