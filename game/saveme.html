@@ -14,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>С новым годом!</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="shortcut icon" href="favicon.gif" type="image/x-icon">
 
 
@@ -23,7 +24,6 @@
 function startTimer() {
   
 var a1 = Math.floor(Math.random() * 10);
-
 document.getElementById("pas").innerHTML ="больше   "+a1+" (๑˃ᴗ˂)ﻭ";
 }
 </script>
@@ -64,7 +64,6 @@ document.getElementById("d").src = "1.mp3"
 <script language="JavaScript">
         timeend= new Date();
         timeend= new Date(timeend.getYear()>1900?(timeend.getYear()+1):(timeend.getYear()+1901),0,1);
-
         function time() {
             today = new Date();
             today = Math.floor((timeend-today)/1000);

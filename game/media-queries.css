@@ -1,0 +1,11 @@
+@media all and (max-aspect-ratio: 18/9) {
+    .block2{
+        width: 2px;
+    }
+    
+}
+@media all and (max-device-aspect-ratio) {
+    .block2{
+        width: 2px;
+    }
+}
