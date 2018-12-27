@@ -179,8 +179,9 @@ transition: 3s;
   
    
 background-image: url(http://oboi.cc/uploads/11_05_2013/view/201209/oboik.ru_21360.jpg) ;
-background-size: cover auto;
-background-repeat: no-repeat;
+background-size: auto;
+background-repeat: no-repeat  ;
+background-position: 42% 42%;
 
 
  }
