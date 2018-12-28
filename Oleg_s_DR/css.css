@@ -79,7 +79,7 @@ i {
    
     
 
-}
+
 img{
     width: 100%;
     height: auto;
@@ -87,7 +87,7 @@ img{
 
 
 @media all and (orientation:portrait) {
-
+    .e {position: absolute;
 }
 
 
