@@ -1,5 +1,3 @@
-//https://github.com/VincentGarreau/particles.js/
-
 particlesJS("particles-js", {
   "particles": {
     "number": {

@@ -1,11 +1,6 @@
-@media all and (max-aspect-ratio: 18/9) {
+@media all and (orientation: portrait) {
     .block2{
-        width: 2px;
+        width: 100%;
     }
     
-}
-@media all and (max-device-aspect-ratio) {
-    .block2{
-        width: 2px;
-    }
 }
