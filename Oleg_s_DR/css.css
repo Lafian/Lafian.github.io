@@ -40,7 +40,8 @@ i {
 
     body:after {
     content: '';
-    position: absolute;
+    
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -71,16 +72,9 @@ i {
     line-height: 1;
     font-family: Lobster, cursive;
 }
-.e{
-    width: 96%;
-    max-width: 500px;
-    margin: 0 auto;
-    position: fixed;
-    top: 0 auto;
-    left: 0 auto;
+
     
     
-    z-index: 3;
     
    
     
