@@ -1,0 +1,23 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Preview: \n\nAll Assets belong to Manjuu Co.ltd.\n\nThis Live Wallpaper was created using Unity.\n\nPlease do not redistribute this wallpaper anywhere without my permission.\n\nWhat does this wallpaper have?\n- Fully interactable Live2D\n- Reaction on touch\n- Fully Audio voice over\n\nWhat can you do with it?\n- 6 different touchable part (head, breast, body, thighs, ice, manjuu)\n- Triple click anywhere on the desktop to mute/unmute\n\nThanks for using this Live Wallpaper!",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.803921568627451 0.30980392156862746 0.30196078431372547"
+			}
+		}
+	},
+	"preview" : "preview.png",
+	"tags" : [ "Anime" ],
+	"title" : "[Azur Lane] Honolulu Live2D",
+	"type" : "web",
+	"visibility" : "public"
+}
