@@ -1,50 +1,25 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Honolulu Live2D</title>
-    <style>
-      html {
-        box-sizing: border-box;
-      }
-      *, *:before, *:after {
-        box-sizing: inherit;
-      }
-      body {
-        margin: 0;
-        background: #444;
-      }
-      #gameContainer {
-        width: 100vw;
-        height: 100vh;
-      }
-      canvas {
-        width: 100%;
-        height: 100%;
-        display: block;
-      }
-      /* try to handle mobile dialog */
-      canvas + * {
-        z-index: 2;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="gameContainer"></div>
-  </body>
-
-  <script src="Build/UnityLoader.js"></script>
-  <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Honolulu.json", {onProgress: UnityProgress, Module: { "webglContextAttributes": {"preserveDrawingBuffer": true}, }});
-  function UnityProgress(gameInstance, progress) {
-    if (!gameInstance.Module) {
-      return;
-    }
-  }
-  </script>
-
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>OwO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="live2d/css/live2d.css" />.
+        
+    </head>
+<body>
+        <div>
+                <canvas id="Snow" width="1536" height="686"></canvas>
+            </div>
+                    <div id="landlord">
+                        <script type="text/javascript" src="live2d/js/Setting.js"></script>
+                        <div class="message" style="opacity:0"></div>
+                        <canvas id="live2dcanvas" width="375" height="420" class="live.2d"></canvas>
+                    </div>
+                    <script type="text/javascript" src="jquery.min.js"></script>
+                    <script type="text/javascript" src="live2d/js/message.js"></script>
+                    <script type="text/javascript" src="bundle.js"></script>
+                    <script type="text/javascript">
+                        loadlive2d("live2dcanvas", "assets/Pio/Pio.model.json");
+                    </script>
+</body>
 </html>
-

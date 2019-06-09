@@ -1,23 +1,75 @@
 {
 	"contentrating" : "Everyone",
-	"description" : "Preview: \n\nAll Assets belong to Manjuu Co.ltd.\n\nThis Live Wallpaper was created using Unity.\n\nPlease do not redistribute this wallpaper anywhere without my permission.\n\nWhat does this wallpaper have?\n- Fully interactable Live2D\n- Reaction on touch\n- Fully Audio voice over\n\nWhat can you do with it?\n- 6 different touchable part (head, breast, body, thighs, ice, manjuu)\n- Triple click anywhere on the desktop to mute/unmute\n\nThanks for using this Live Wallpaper!",
+	"description" : "绝赞二小姐，在线卖萌！\n冬天到了，下雪特效开启！\n《东方试闻广纪 ~ Perfect Memento of Touhou Question》带来全新Tips！\n作者p站id=66176711",
 	"file" : "index.html",
 	"general" : 
 	{
 		"properties" : 
 		{
+			"Position_Options" : 
+			{
+				"order" : 3,
+				"text" : "<br/><h4>●  看板娘选项(Live2d Options)</h4><br/>",
+				"type" : "text"
+			},
+			"Snow" : 
+			{
+				"order" : 7,
+				"text" : "雪花选项",
+				"type" : "bool",
+				"value" : true
+			},
+			"Snow_Options" : 
+			{
+				"order" : 6,
+				"text" : "<br/><h4>●  雪花选项(Snow Options)</h4><br/>",
+				"type" : "text"
+			},
+			"Text_Background_Options" : 
+			{
+				"order" : 1,
+				"text" : "<br/><h4>●  背景选项(Background Options)</h4><br/>",
+				"type" : "text"
+			},
+			"Xaxe" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 4,
+				"text" : "x轴位置",
+				"type" : "slider",
+				"value" : 5
+			},
+			"Yaxe" : 
+			{
+				"max" : 100,
+				"min" : 0,
+				"order" : 5,
+				"text" : "y轴位置",
+				"type" : "slider",
+				"value" : 7
+			},
+			"bgurl" : 
+			{
+				"order" : 2,
+				"text" : "自定义壁纸",
+				"type" : "file",
+				"value" : ""
+			},
 			"schemecolor" : 
 			{
 				"order" : 0,
 				"text" : "ui_browse_properties_scheme_color",
 				"type" : "color",
-				"value" : "0.803921568627451 0.30980392156862746 0.30196078431372547"
+				"value" : "0.5686274509803921 0.27058823529411763 0.3568627450980392"
 			}
 		}
 	},
-	"preview" : "preview.png",
+	"monetization" : false,
+	"preview" : "preview.jpg",
 	"tags" : [ "Anime" ],
-	"title" : "[Azur Lane] Honolulu Live2D",
+	"title" : "东方Project-Touhou 二小姐Live2d",
 	"type" : "web",
-	"visibility" : "public"
+	"visibility" : "public",
+	"workshopid" : "1247261465"
 }
