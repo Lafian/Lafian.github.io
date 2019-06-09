@@ -22,7 +22,7 @@ window.wallpaperPropertyListener={
     }
 };
 function setImage(url){
-    document.body.style.backgroundImage='url('+url+')';  
+    document.body.style.backgroundImage='1.png';  
     document.body.style.backgroundPosition="left";  
     document.body.style.backgroundRepeat="no-repeat";  
     document.body.style.backgroundAttachment="fixed";  
