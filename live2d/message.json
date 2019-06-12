@@ -1,8 +1,8 @@
 {
     "mouseover": [
         {
-            "selector": "#landlord #live2dcanvas",
-            "text": ["123", "3221"]
+            "selector": "#landlord #live2dcanvas #knopka",
+            "text": ["123", "привет"]
         }
     ],
     "click": [

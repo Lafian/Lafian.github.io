@@ -7,11 +7,13 @@ body {
     background:  no-repeat bottom fixed brown;
     background-size: cover;
     }
-    a.knopka{
+    #knopka{
+        width: 50px;
+        height: 20px;
         color: #fff; /* цвет текста */
         text-decoration: none; /* убирать подчёркивание у ссылок */
         user-select: none; /* убирать выделение текста */
-        background: rgb(212,75,56); /* фон кнопки */
+        background: pink; /* фон кнопки */
         padding: .7em 1.5em; /* отступ от текста */
         outline: none; /* убирать контур в Mozilla */
     }
