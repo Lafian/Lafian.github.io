@@ -2,7 +2,7 @@
     "mouseover": [
         {
             "selector": "#landlord #live2dcanvas",
-            "text": ["1111111"]
+            "text": ["123", "3221"]
         }
     ],
     "click": [
