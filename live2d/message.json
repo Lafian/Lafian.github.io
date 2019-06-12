@@ -1,8 +1,8 @@
 {
     "mouseover": [
         {
-            "selector": "#landlord #live2dcanvas",
-            "text": ["Зачем ты это делаешь, убери руку?", "Мышь ... Мышь не в том месте!"]
+            "selector": "#landlord #live2dcanvas a.knopka",
+            "text": ["111111"]
         }
     ],
     "click": [
