@@ -5,11 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="live2d/css/live2d.css" />
         <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <script language="javascript">
+            function myFunction() {
+        var app = SpreadsheetApp;
+        var ss = app.openByUrl("https://docs.google.com/spreadsheets/d/1zeDUy--qFLFJLedZSzPz4SmUMqitjuZaLbfU_ETaFQE/edit#gid=0");
+        //var qwe = $("#mail").val();
+        var qwe =document.getElementById('mail').value;
+        var rr = ss.getActiveSheet().getRange("A1").setValue(qwe);
+        alert(qwe);
+
+}
+        </script>
         
     </head>
 <body >
         <p align="center">Здесь должно быть что-то ,но этого тут нет!</p>
         <center><img src="Tupaklacc.png" width="200px" height="200px" alt=""></center>
+        <div id="email"><center><textarea id="mail"></textarea></center></div>
+        <div><center><input type="button" onclick="myFunction()" value="get textarea value"></div>
         
     
         <div>
@@ -26,5 +39,6 @@
                     <script type="text/javascript">
                         loadlive2d("live2dcanvas", "assets/Pio/Pio.model.json");
                     </script>
+                    
 </body>
 </html>
