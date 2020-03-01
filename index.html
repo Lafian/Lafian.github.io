@@ -8,7 +8,7 @@
         <script language="javascript">
             function myFunction() {
         var app = SpreadsheetApp;
-        var ss = app.openByUrl("https://docs.google.com/spreadsheets/d/1zeDUy--qFLFJLedZSzPz4SmUMqitjuZaLbfU_ETaFQE/edit#gid=0");
+        var ss = app.openByUrl("https://docs.google.com/spreadsheets/d/e/2PACX-1vStV5RaOqv4QAcqOyiE4nOe4nRqIiXfUSxOSlSElUHPC3rUP4QRHsSWYnOes1hFPzy4dM8zcEISM7f4/pubhtml");
         //var qwe = $("#mail").val();
         var qwe =document.getElementById('mail').value;
         var rr = ss.getActiveSheet().getRange("A1").setValue(qwe);
