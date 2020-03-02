@@ -18,13 +18,13 @@ function sleep(milliseconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
-         /*   function submit() {
+           function submit() {
                 
         
             var rq = $.ajax({
             type: 'POST',
             url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
-            data: $('#mail , #ipss , #name1').serialize()
+            data: $('#mail').serialize()
             });
             rq.done(function(data) {
             toastr['success'](JSON.stringify(data), 'Успех');
@@ -40,12 +40,7 @@ function sleep(milliseconds) {
     $(function() {
     $('#submit').click(submit);
     })
-        function qwe(){
-            var ip = location.host;
-            document.cookie="localip=" + ip
-            alert(Socket);
-
-        }
+    /*
     function natIP() {
     var w = window.location;
     var host = w.host;
