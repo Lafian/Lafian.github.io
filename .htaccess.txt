@@ -1,5 +1,6 @@
 <Limit GET POST>
  order allow,deny
  deny from 212.112.122.149
+ deny from 212.112.118.160
  allow from all
 </Limit>
