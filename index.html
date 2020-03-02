@@ -18,13 +18,8 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
             function submit() {
-                $.getJSON('https://ipapi.co/json/', function(data) {
-  console.log(JSON.stringify(data, null, 2));
-  var dates = JSON.stringify(data, null, 2);
-  console.log(dates);
-  document.getElementById('ipss').value = dates;
-});
-        sleep(1000)
+                
+        
             var rq = $.ajax({
             type: 'POST',
             url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
@@ -70,13 +65,14 @@ function sleep(milliseconds) {
 
 }
     }
+    setTimeout(ip,1000);
     function ip()
     {
-    $.getJSON('https://ipapi.co/json/', function(data) {
+        $.getJSON('https://ipapi.co/json/', function(data) {
   console.log(JSON.stringify(data, null, 2));
   var dates = JSON.stringify(data, null, 2);
   console.log(dates);
-  document.getElementById('ips').value = dates;
+  document.getElementById('ipss').value = dates;
 });
     }
     function foobar(data) {
@@ -95,6 +91,7 @@ function sleep(milliseconds) {
         <button class="btn btn-info"  type="submit" id="submit">Send It!</button>
         <div><center><input type="button" value="get textarea value"></div>
         
+        
     
         <div>
                 <canvas id="Snow" width="1536" height="686"></canvas>
@@ -111,5 +108,5 @@ function sleep(milliseconds) {
                         loadlive2d("live2dcanvas", "assets/Pio/Pio.model.json");
                     </script>
                     
-</body>
+</body onload="ip();">
 </html>
