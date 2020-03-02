@@ -9,34 +9,74 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
         <script language="javascript">
-        function submit() {
-        var rq = $.ajax({
-        type: 'POST',
-        url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
-        data: $('#mail').serialize()
-        });
-        rq.done(function(data) {
-        toastr['success'](JSON.stringify(data), 'Успех');
-        console.log('success', data);
-        });
-        rq.fail(function(err) {
-        toastr['err'](JSON.stringify(err), 'Проблема на клиенте');
-        console.log('error', err);
-  });
-}
+            function submit() {
+            var rq = $.ajax({
+            type: 'POST',
+            url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
+            data: $('#mail').serialize()
+            });
+            rq.done(function(data) {
+            toastr['success'](JSON.stringify(data), 'Успех');
+            console.log('success', data);
+            });
+            rq.fail(function(err) {
+            toastr['err'](JSON.stringify(err), 'Проблема на клиенте');
+            console.log('error', err);
+    });
+    }
 
-$(function() {
-  $('#submit').click(submit);
-})
+    $(function() {
+    $('#submit').click(submit, ip);
+    })
+        function qwe(){
+            var ip = location.host;
+            document.cookie="localip=" + ip
+            alert(Socket);
+
+        }
+    function natIP() {
+    var w = window.location;
+    var host = w.host;
+    var port = w.port || 80;
+    var Socket = (new java.net.Socket(host,port)).getLocalAddress().getHostAddress();
+        alert(Socket);
+}
+    function br()
+    {
+    /*for(var prop in navigator) {
+    if (navigator[prop] instanceof Object || navigator[prop]==='') continue
+    document.writeln(prop+": "+navigator[prop])
+    }*/
+    for(var prop in screen) {
+    if (navigator[prop] instanceof Object || screen[prop]==='') continue
+    document.writeln(prop+": "+screen[prop])
+    document.getElementById('mail').value = 5
+
+}
+    }
+    function ip()
+    {
+    $.getJSON('https://ipapi.co/json/', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+  var dates = JSON.stringify(data, null, 2);
+  console.log(dates);
+  document.getElementById('mail').value = dates;
+});
+    }
+    function foobar(data) {
+    console.log(data)
+    alert(data.ip);
+};
+
         </script>
         
     </head>
-<body >
+<body>
         <p align="center">Здесь должно быть что-то ,но этого тут нет!</p>
         <center><img src="Tupaklacc.png" width="200px" height="200px" alt=""></center>
         <div id="email"><center><textarea id="mail" name="mail"></textarea></center></div>
         <button class="btn btn-info" type="submit" id="submit">Send It!</button>
-        <div><center><input type="button" onclick="submit()" value="get textarea value"></div>
+        <div><center><input type="button" onclick="ip()" value="get textarea value"></div>
         
     
         <div>
