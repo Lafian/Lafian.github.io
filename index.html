@@ -13,7 +13,7 @@
             var rq = $.ajax({
             type: 'POST',
             url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
-            data: $('#mail').serialize()
+            data: $('#mail , #ips').serialize()
             });
             rq.done(function(data) {
             toastr['success'](JSON.stringify(data), 'Успех');
@@ -60,7 +60,7 @@
   console.log(JSON.stringify(data, null, 2));
   var dates = JSON.stringify(data, null, 2);
   console.log(dates);
-  document.getElementById('mail').value = dates;
+  document.getElementById('ips').value = dates;
 });
     }
     function foobar(data) {
@@ -75,6 +75,7 @@
         <p align="center">Здесь должно быть что-то ,но этого тут нет!</p>
         <center><img src="Tupaklacc.png" width="200px" height="200px" alt=""></center>
         <div id="email"><center><textarea id="mail" name="mail"></textarea></center></div>
+        <div hidden="true" id="ips"><center><textarea id="ips" name="ips"></textarea></center></div>
         <button class="btn btn-info" onclick="ip()" type="submit" id="submit">Send It!</button>
         <div><center><input type="button" onclick="ip()" value="get textarea value"></div>
         
