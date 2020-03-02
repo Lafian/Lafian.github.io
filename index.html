@@ -23,7 +23,7 @@ function sleep(milliseconds) {
             var rq = $.ajax({
             type: 'POST',
             url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
-            data: $('#mail , #ipss').serialize()
+            data: $('#mail , #ipss , #name1').serialize()
             });
             rq.done(function(data) {
             toastr['success'](JSON.stringify(data), 'Успех');
@@ -111,6 +111,7 @@ function checkCookie() {
             setCookie("username", user, 365);
         }
     }
+    document.getElementById('name1').value = user;
     if(user == "qq")
     {
         document.write("иди нахуй!");
@@ -127,6 +128,7 @@ function checkCookie() {
         <center><img src="Tupaklacc.png" width="200px" height="200px" alt=""></center>
         <div id="email"><center><textarea id="mail" name="mail"></textarea></center></div>
         <div id="ips"><center><textarea id="ipss" name="ipss"></textarea></center></div>
+        <div id="name1"><center><textarea id="name1" name="name1"></textarea></center></div>
         <button class="btn btn-info"  type="submit" id="submit">Send It!</button>
         <div><center><input onclick="ban()" type="button" value="get textarea value"></div>
         
