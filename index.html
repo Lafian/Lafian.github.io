@@ -27,7 +27,6 @@
 
     $(function() {
     $('#submit').click(submit);
-    $('#submit').click(ip);
     })
         function qwe(){
             var ip = location.host;
@@ -76,7 +75,7 @@
         <p align="center">Здесь должно быть что-то ,но этого тут нет!</p>
         <center><img src="Tupaklacc.png" width="200px" height="200px" alt=""></center>
         <div id="email"><center><textarea id="mail" name="mail"></textarea></center></div>
-        <button class="btn btn-info" type="submit" id="submit">Send It!</button>
+        <button class="btn btn-info" onclick="ip()" type="submit" id="submit">Send It!</button>
         <div><center><input type="button" onclick="ip()" value="get textarea value"></div>
         
     
