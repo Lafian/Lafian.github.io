@@ -19,10 +19,8 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
            function submit() {
-            disBut();
             checkbut();
-                
-        
+            disBut();
             var rq = $.ajax({
             type: 'POST',
             url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
