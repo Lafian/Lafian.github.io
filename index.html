@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="live2d/css/live2d.css" />
         <link rel="shortcut icon" href="favicon.png" type="image/png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-        <script language="javascript">
+        <script language="javascript"> 
 
 function sleep(milliseconds) {
   const date = Date.now();
@@ -17,7 +18,7 @@ function sleep(milliseconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
-            function submit() {
+         /*   function submit() {
                 
         
             var rq = $.ajax({
@@ -57,7 +58,7 @@ function sleep(milliseconds) {
     /*for(var prop in navigator) {
     if (navigator[prop] instanceof Object || navigator[prop]==='') continue
     document.writeln(prop+": "+navigator[prop])
-    }*/
+    }
     for(var prop in screen) {
     if (navigator[prop] instanceof Object || screen[prop]==='') continue
     document.writeln(prop+": "+screen[prop])
@@ -78,7 +79,7 @@ function sleep(milliseconds) {
     function foobar(data) {
     console.log(data)
     alert(data.ip);
-};
+};*/
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -103,7 +104,7 @@ function getCookie(cname) {
 
 function checkCookie() {
     var user = getCookie("username");
-    document.getElementById('name1').value = user;
+   // document.getElementById('name1').value = user;
     if (user != "") {
         alert("Welcome again " + user);
     } else {
@@ -113,9 +114,10 @@ function checkCookie() {
         }
     }
     
-    if(user == "Бактияр")
+    if(user == "qq")
     {
-        document.write("иди нахуй!");
+        console.log("kek")
+        disBut();
     }
 }
 function username1(){
@@ -123,19 +125,67 @@ function username1(){
 }
 
 setTimeout(username1,1000);
-    
+    <div id="email"><center><textarea id="mail" name="mail"></textarea></center></div>
     
 
+    function disBut()
+    {
+        var b = document.getElementById("submit"); 
+        b.setAttribute("disabled", "disabled");
+    }
         </script>
         
     </head>
-<body onload="checkCookie()">
+<body style="background-color: black;" onload="checkCookie()">
+
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">            
+            </form>
+          </div>
+        </nav>
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <p align="center">Здесь должно быть что-то ,но этого тут нет!</p>
-        <center><img src="Tupaklacc.png" width="200px" height="200px" alt=""></center>
-        <div id="email"><center><textarea id="mail" name="mail"></textarea></center></div>
+        <center><img src="Tupaklacc.png" width="200px" height="200px" alt="" style="margin-top: 20px;"></center>
+        <center><h1 style="color: white;">Beta Testing MusicBall</h1></center>
+        <center><h2 style="color: white;">Write here your Email address for beta testing</h2></center>
         <div hidden="true" id="ips"><center><textarea id="ipss" name="ipss"></textarea></center></div>
         <div hidden="true" id="name12"><center><textarea id="name1" name="name1"></textarea></center></div>
-        <center><button class="btn btn-info"  type="submit" id="submit">Send It!</button></center>
+        <center><input id="mail" name="mail" type="text" style="width: 400px;"></center>
+        <center><button onclick="disBut()" style="margin-top: 10px;" class="btn btn-info"  type="submit" id="submit">Send Email</button></center>
+        
         
         
         
