@@ -54,6 +54,14 @@ function initTips(){
                     showMessage(text, 3000);
                 });
             });
+            $.each(result.click4, function (index, tips){
+                $(tips.selector).click(function (){
+                    var text = tips.text;
+                    if(Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1)-1];//鼠标点击
+                    text = text.renderTip({text: $(this).text()});
+                    showMessage(text, 3000);
+                });
+            });
         }
     });
 }
