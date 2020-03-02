@@ -1,4 +1,11 @@
 {
+    "click4": [
+        {
+            "selector": "#mail",
+            "text": ["thx =)"]
+        }
+    ],
+
     "mouseover": [
         {
             "selector": "#knopka",
