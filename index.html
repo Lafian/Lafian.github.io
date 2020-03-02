@@ -19,7 +19,7 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
            function submit() {
-            checkbut();
+            checkbut1();
             disBut();
             var rq = $.ajax({
             type: 'POST',
@@ -115,6 +115,11 @@ function checkCookie() {
         disBut();
     }
 }   
+    function checkbut1{
+            var che = "123";
+            setCookie("username", che, 365)
+            console.log("false");
+    }
 
     function checkbut(){
         var che = getCookie("username");
@@ -123,12 +128,6 @@ function checkCookie() {
             disBut();
             console.log(che);
         }
-        else{
-            var che = "123";
-            setCookie("username", che, 365)
-            console.log("false");
-                }
-       
     }
 
     function disBut()
