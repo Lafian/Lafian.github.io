@@ -9,6 +9,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
         <script language="javascript">
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
             function submit() {
                 $.getJSON('https://ipapi.co/json/', function(data) {
   console.log(JSON.stringify(data, null, 2));
@@ -16,6 +24,7 @@
   console.log(dates);
   document.getElementById('ipss').value = dates;
 });
+        sleep(1000)
             var rq = $.ajax({
             type: 'POST',
             url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
