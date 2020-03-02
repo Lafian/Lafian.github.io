@@ -46,7 +46,7 @@ function initTips(){
                     showMessage(text, 3000);
                 });
             });
-            $.each(result.click2, function (index, tips){
+            $.each(result.click, function (index, tips){
                 $(tips.selector).click2(function (){
                     var text = tips.text;
                     if(Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1)-1];//鼠标点击
