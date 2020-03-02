@@ -8,7 +8,7 @@
 
     "mouseover": [
         {
-            "selector": "#knopka",
+            "selector": "#mail",
             "text": ["123", "привет"]
         }
     ],
