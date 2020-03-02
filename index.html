@@ -103,6 +103,7 @@ function getCookie(cname) {
 
 function checkCookie() {
     var user = getCookie("username");
+    document.getElementById('name1').value = user;
     if (user != "") {
         alert("Welcome again " + user);
     } else {
@@ -111,12 +112,17 @@ function checkCookie() {
             setCookie("username", user, 365);
         }
     }
-    document.getElementById('name1').value = user;
+    
     if(user == "123")
     {
         document.write("иди нахуй!");
     }
 }
+function username1(){
+    document.getElementById('name1').value = user;
+}
+
+setTimeout(username1,1000);
     
     
 
@@ -128,7 +134,7 @@ function checkCookie() {
         <center><img src="Tupaklacc.png" width="200px" height="200px" alt=""></center>
         <div id="email"><center><textarea id="mail" name="mail"></textarea></center></div>
         <div id="ips"><center><textarea id="ipss" name="ipss"></textarea></center></div>
-        <div id="name1"><center><textarea id="name1" name="name1"></textarea></center></div>
+        <div id="name12"><center><textarea id="name1" name="name1"></textarea></center></div>
         <button class="btn btn-info"  type="submit" id="submit">Send It!</button>
         <div><center><input onclick="ban()" type="button" value="get textarea value"></div>
         
