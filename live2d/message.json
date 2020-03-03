@@ -1,8 +1,8 @@
 {
     "click4": [
         {
-            "selector": "#mail",
-            "text": ["thx =)"]
+            "selector": "#submit",
+            "text": ["Ожидайте на почту разных интересных писем"]
         }
     ],
 
