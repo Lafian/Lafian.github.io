@@ -3,7 +3,6 @@
         <meta charset="UTF-8" />
         <title>LafianStudios</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="live2d/css/live2d.css" />
         <link rel="shortcut icon" href="favicon.png" type="image/png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -24,7 +23,7 @@ function sleep(milliseconds) {
             var rq = $.ajax({
             type: 'POST',
             url: 'https://script.google.com/macros/s/AKfycbweepKls20HNPqX1UBKGgALQ76QgznkbRo_b5y7YDHPkXjNjRY/exec',
-            data: $('#mail').serialize()
+            data: $('#mail , #feed').serialize()
             });
             rq.done(function(data) {
             toastr['success'](JSON.stringify(data), 'Успех');
@@ -40,41 +39,7 @@ function sleep(milliseconds) {
     $(function() {
     $('#submit').click(submit);
     })
-    /*
-    function natIP() {
-    var w = window.location;
-    var host = w.host;
-    var port = w.port || 80;
-    var Socket = (new java.net.Socket(host,port)).getLocalAddress().getHostAddress();
-        alert(Socket);
-}
-    function br()
-    {
-    /*for(var prop in navigator) {
-    if (navigator[prop] instanceof Object || navigator[prop]==='') continue
-    document.writeln(prop+": "+navigator[prop])
-    }
-    for(var prop in screen) {
-    if (navigator[prop] instanceof Object || screen[prop]==='') continue
-    document.writeln(prop+": "+screen[prop])
-    document.getElementById('mail').value = 5
-
-}
-    }
-    setTimeout(ip,1000);
-    function ip()
-    {
-        $.getJSON('https://ipapi.co/json/', function(data) {
-  console.log(JSON.stringify(data, null, 2));
-  var dates = JSON.stringify(data, null, 2);
-  console.log(dates);
-  document.getElementById('ipss').value = dates;
-});
-    }
-    function foobar(data) {
-    console.log(data)
-    alert(data.ip);
-};*/
+    
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -136,11 +101,7 @@ function checkCookie() {
     }
 
 
-    function soundClick() {
-    var audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = '321.mp3'; // Указываем путь к звуку "клика"
-     audio.autoplay = true; // Автоматически запускаем
-}
+    
         </script>
         
     </head>
@@ -149,7 +110,7 @@ function checkCookie() {
 
 
 
-    <header>
+     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <a class="navbar-brand" href="#">LafianStudios</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -184,34 +145,54 @@ function checkCookie() {
 
 
 
-        <p align="center">Здесь должно быть что-то ,но этого тут нет!</p>
-        <center><img src="Tupaklacc.png" width="200px" height="200px" alt="" style="margin-top: 20px;"></center>
-        <center><h1 style="color: white;">Beta Testing MusicBall</h1></center>
-        <center><h2 style="color: white;">Write here your Email address for beta testing</h2></center>
-        <div hidden="true" id="ips"><center><textarea id="ipss" name="ipss"></textarea></center></div>
+       
+        <center><img src="1.png" width="200px" height="200px" alt="" style="margin-top: 50px;"></center>
+        <center><p style="font-size: 75;color: white;">MusicBall</p></center>
+        <center><p style="font-size: 50; color: white;">About</p></center>
+        <center><p style="font-size: 25;color: white;">The "MusicBall" game is a FREE, fun music arcade game with many levels.</p></center>
+        <center><p style="font-size: 25;color: white;">Thanks to carefully selected music and addictive gameplay, the developers managed to achieve an incredible experience for the players!</p></center>
+        <center><p style="font-size: 25;color: white;">========================================================================</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;">Features of "MusicBall"</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;">♫ The game is an arcade game where, while controlling the ball, you need to evade the blocks and play to the end of the level while the song is playing.</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;">♫ The game features 3 worlds of 15 levels with their own unique visual style and gameplay. Each world has its own level boss. Can you get through them ...?</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;">♫ 45 exciting unique songs!</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;">========================================================================</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 50;color: white;">Promo video</p></center>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/5YjADj34Ymw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;">========================================================================</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 50;color: white;">FeedBack</p></center>
         <div hidden="true" id="name12"><center><textarea id="name1" name="name1"></textarea></center></div>
+        <center><p style="font-size: 40;color: white;">Message</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><input id="feed" name="feed" type="text" style="width: 400px;"></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 40;color: white;">Mail</p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
         <center><input id="mail" name="mail" type="text" style="width: 400px;"></center>
         <center><button style="margin-top: 10px;" class="btn btn-info"  type="submit" id="submit">Send Email</button></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;"></p></center>
+        <center><p style="font-size: 25;color: white;">LafianStudios</p></center>
         
         
         
         
         
     
-        <div>
-                <canvas id="Snow" width="1536" height="686"></canvas>
-            </div>
-                    <div id="landlord">
-                        <script type="text/javascript" src="live2d/js/Setting.js"></script>
-                        <div class="message" style="opacity:0"></div>
-                        <canvas id="live2dcanvas" width="375" height="420" class="live.2d"></canvas>
-                    </div>
-                    <script type="text/javascript" src="jquery.min.js"></script>
-                    <script type="text/javascript" src="live2d/js/message.js"></script>
-                    <script type="text/javascript" src="bundle.js"></script>
-                    <script type="text/javascript">
-                        loadlive2d("live2dcanvas", "assets/Pio/Pio.model.json");
-                    </script>
+       
                     
-</body onload="ip();">
+</body>
 </html>
