@@ -1534,6 +1534,9 @@ section.lazy-placeholder:after {
 .cid-rWiouWT6rv .media-container-row .row-copirayt p {
   width: 100%;
 }
+.cid-rWiouWT6rv .media-container-row .mbr-text {
+  color: #cccccc;
+}
 .cid-rWq05BAvn0 {
   padding-top: 90px;
   padding-bottom: 60px;
@@ -2025,4 +2028,7 @@ section.lazy-placeholder:after {
 }
 .cid-rWiouWT6rv .media-container-row .row-copirayt p {
   width: 100%;
+}
+.cid-rWiouWT6rv .media-container-row .mbr-text {
+  color: #cccccc;
 }
